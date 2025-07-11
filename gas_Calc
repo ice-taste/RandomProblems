@@ -1,0 +1,12 @@
+#returns gas cost for a specified mileage
+
+mpg = float(input())
+gas = float(input())
+
+mileage25 = gas * (20 / mpg)
+
+mileage75 = gas * (75 / mpg)
+
+mileage500 = gas * (500 / mpg)
+
+print(f"{mileage25:.2f} {mileage75:.2f} {mileage500:.2f}")
