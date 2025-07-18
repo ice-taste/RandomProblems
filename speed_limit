@@ -1,0 +1,16 @@
+#Write a program that is given two integers representing a speed limit and driving speed in miles per hour (mph) and outputs the traffic ticket amount
+
+limit = float(input())
+
+mph = float(input())
+
+if mph <= limit - 10: 
+    print('50')
+elif mph >= limit + 6 and mph <= limit + 20:
+    print('75')
+elif mph >= limit + 21 and mph <= limit + 40: 
+    print('150')
+elif mph > limit + 40: 
+    print('300')
+else: 
+    print('0')
